@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADMISSION-FORM</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="heading">
+        <h1>JSPM UNIVERSITY</h1>
+        <h2>Student Admission Form</h2>
+    </div>
+    <form>
+        <!-- Student Details -->
+        <div class="student">
+            <h3>Student details </h3> <br>
+        </div>
+        <label>Full Name:</label><br>
+        <input type="text" name="name" required><br><br>
+
+        <label>Date of Birth:</label><br>
+        <input type="date" name="dob" required><br><br>
+
+        <label>Gender:</label><br>
+        <input type="radio" name="gender"> Male
+        <input type="radio" name="gender"> Female
+        <input type="radio" name="gender"> Other<br><br>
+
+
+        <label>Blood Group:</label><br>
+        <select name="blood">
+            <option value="">Select</option>
+            <option>A+</option>
+            <option>A-</option>
+            <option>B+</option>
+            <option>B-</option>
+            <option>O+</option>
+            <option>O-</option>
+            <option>AB+</option>
+            <option>AB-</option>
+        </select><br><br>
+
+        <!-- Contact Details -->
+        <h3>Contact Details</h3>
+        <label>Mobile Number:</label><br>
+        <input type="tel" name="mobile" pattern="[0-9]{10}" required><br><br>
+
+        <label>Email:</label><br>
+        <input type="email" name="email"><br><br>
+
+        <!-- Address -->
+        <h3>Address</h3>
+        <label>Full Address:</label><br>
+        <textarea name="address" rows="3" required></textarea><br><br>
+
+        <label>City:</label><br>
+        <input type="text" name="city" required><br><br>
+
+        <label>State:</label><br>
+        <input type="text" name="state" required><br><br>
+
+        <label>Pincode:</label><br>
+        <input type="text" name="pincode" pattern="[0-9]{6}" maxlength="6" required><br><br>
+        <!-- Parent / Guardian -->
+        <h3>Parent / Guardian Details</h3>
+        <label>Father's Name:</label><br>
+        <input type="text" name="father"><br><br>
+
+        <label>Mother's Name:</label><br>
+        <input type="text" name="mother"><br><br>
+
+        <label>Guardian Mobile:</label><br>
+        <input type="tel" name="guardian_mobile" pattern="[0-9]{10}"><br><br>
+
+        <label>Occupation:</label><br>
+        <input type="text" name="occupation"><br><br>
+
+        <!-- Academic Details -->
+        <h3>Academic Details</h3>
+        <label>Previous School / College:</label><br>
+        <input type="text" name="previous_school"><br><br>
+
+        <label>Last Class Passed:</label><br>
+        <input type="text" name="last_class"><br><br>
+
+        <label>Percentage / Grade:</label><br>
+        <input type="text" name="percentage"><br><br>
+
+        <!-- Course -->
+        <h3>Course Selection</h3>
+        <label>Course Applying For:</label><br>
+        <select name="course" required>
+            <option value="">Select Course</option>
+            <option>Science</option>
+            <option>Commerce</option>
+            <option>Arts</option>
+            <option>Computer Science</option>
+        </select><br><br>
+
+        <!-- Documents -->
+        <h3>Upload Documents</h3>
+        <label>Aadhaar Number:</label><br>
+        <input type="text" name="aadhaar" pattern="[0-9]{12}" maxlength="12" required><br><br>
+
+        <label>Upload Photo:</label><br>
+        <input type="file" name="photo"><br><br>
+
+        <label>Upload Marksheet:</label><br>
+        <input type="file" name="marksheet"><br><br>
+
+        <!-- Declaration -->
+        <input type="checkbox" required>
+        I hereby declare that the above information is true.<br><br>
+
+        <!-- Submit -->
+        <input type="submit" value="Submit Admission Form">
+
+    </form>
+</body>
+
+</html>
